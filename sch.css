@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  color: white;
+  padding: 60px 20px;
+  animation: slideDown 1s ease-out;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+/* Life Tips Section */
+.life-tips {
+  padding: 40px 20px;
+}
+
+.life-tips h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.life-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.life-tips li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  animation: fadeInUp 1s ease;
+}
+
+/* Social Media Links */
+.social-links {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.social-links h2 {
+  margin-bottom: 20px;
+}
+
+.icons a {
+  font-size: 2em;
+  margin: 0 15px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease-in;
+}
+
+.slide-in {
+  animation: slideDown 1s ease-out;
+}
